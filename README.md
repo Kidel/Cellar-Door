@@ -1,5 +1,5 @@
 # Cellar-Door
-Cellar Door is a PHP script that will scan a bg folder with background images and generate a jQuery script to switch them every 10 seconds. CSS transition included. Lazy load (only next picture is preloaded).
+Cellar Door is a PHP function that will scan a folder with background images and generate a jQuery script to switch them as body background every 10 seconds (as default). CSS transition animation is included. Lazy load policy (only next picture is pre-loaded).
 
  * Cellar Door
  * PHP - jQuery - CSS
