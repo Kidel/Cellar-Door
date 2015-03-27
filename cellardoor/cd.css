@@ -1,8 +1,8 @@
 body {
-    -webkit-transition: background-image 0.5s linear !important
-    -moz-transition: background-image 0.5s linear !important
-    -o-transition: background-image 0.5s linear !important
-    transition: background-image 0.5s linear !important
+    -webkit-transition: background-image 0.5s linear !important;
+    -moz-transition: background-image 0.5s linear !important;
+    -o-transition: background-image 0.5s linear !important;
+    transition: background-image 0.5s linear !important;
     background-repeat: no-repeat !important;
     background-position: 0 0 !important;
     background-attachment: fixed !important;
@@ -10,4 +10,9 @@ body {
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
     background-size: cover !important;
+}
+.cd-preload {
+	display:none;
+	visibility:hidden;
+	opacity:0;
 }
