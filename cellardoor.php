@@ -44,7 +44,7 @@ function cellarDoor($seconds=10, $shuffle=true, $dir='cellardoor/bg/') {
 					var quoted = $.map(str.split(\'"\'), function(substr, i) {
 					   return (i % 2) ? substr : null;
 					});
-				    $(\'<img />\').attr(\'src\',quoted).appendTo(\'body\').css(\'display\',\'none\');
+				    $(\'<img />\').attr( { src:quoted, class:"cd-preload" } ).appendTo(\'body\').css(\'display\',\'none\');
 				}
 				function nextBackground() {
 					body.css(
