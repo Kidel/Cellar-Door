@@ -10,6 +10,7 @@ This script will scan 'cellardoor/bg/' folder and look for *.jpg files. Files wi
 For transition please include cellardoor/cd.css in your page. 
 To make this script work please include this php file in your php page and upload files and folders with the correct hierarchy and be sure to import jQuery. 
 Call cellarDoor(); after your jQuery.js import. You can change speed, randomization and folder as arguments.  
+  
 Example: 
 ```
 <link rel="stylesheet" href="cellardoor/cd.css">
