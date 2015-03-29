@@ -26,7 +26,7 @@ function cellarDoor($seconds=10, $shuffle=true, $dir='cellardoor/bg/') {
 	$images = glob($dir.'*.jpg');
 	if ($shuffle) shuffle($images);
 
-    echo '
+    	echo '
 		<script>
 		  $(function() {
 				var body = $(\'.cellardoor\');
