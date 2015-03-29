@@ -5,7 +5,8 @@
  * PHP - jQuery - CSS
  * Author: Gaetano Bonofiglio - ByteAround.com
  * 
- * This script will scan 'cellardoor/bg/' folder and look for *.jpg files. Files will be added and randomized in a cycle that will change body background every 10 seconds (by default).
+ * This script will scan 'cellardoor/bg/' folder and look for *.jpg files. Files will be added and randomized in a cycle that will change the background every 10 seconds (by default).
+ * Backgrounds are applied to elements with class "cellardoor".
  * For transition please include cellardoor/cd.css in your page.
  * To make this script work please include this php file in your php page and upload files and folders with the correct hierarchy as shown in the demo.
  * Call cellarDoor(); after your jQuery.js import. You can change speed, randomization and folder as arguments.
@@ -28,7 +29,7 @@ function cellarDoor($seconds=10, $shuffle=true, $dir='cellardoor/bg/') {
     echo '
 		<script>
 		  $(function() {
-				var body = $(\'.main\');
+				var body = $(\'.cellardoor\');
 				var backgrounds = new Array(';
 
 	$num = count($images);
