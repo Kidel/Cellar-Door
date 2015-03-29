@@ -1,18 +1,42 @@
-body {
+.cellardoor {
     -webkit-transition: background-image 0.5s linear !important;
     -moz-transition: background-image 0.5s linear !important;
     -o-transition: background-image 0.5s linear !important;
     transition: background-image 0.5s linear !important;
+
     background-repeat: no-repeat !important;
-    background-position: 0 0 !important;
+    background-position: 0 0;
+    -webkit-background-size: 100% auto !important;
+    -moz-background-size: 100% auto !important;
+    -o-background-size: 100% auto !important;
+    background-size: 100% auto !important;
+    -webkit-background-attachment: fixed !important;
+    -moz-background-attachment: fixed !important;
+    -o-background-attachment: fixed !important;
     background-attachment: fixed !important;
+    
+/* Not really needed. 
+ * Disabled to make CellarDoor compatible with parallax background plugins */
+/*    
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
     background-size: cover !important;
+*/
 }
+/* Hidden preload */
 .cd-preload {
-	display:none;
-	visibility:hidden;
-	opacity:0;
+	display:none !important;
+	visibility:hidden !important;
+	opacity:0 !important;
+}
+
+/* Responsive */
+@media (max-width:767px) {
+    .cellardoor {
+        -webkit-background-size: auto 130% !important;
+        -moz-background-size: auto 130% !important;
+        -o-background-size: auto 130% !important;
+        background-size: auto 130% !important;
+    }
 }
