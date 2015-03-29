@@ -28,7 +28,7 @@ function cellarDoor($seconds=10, $shuffle=true, $dir='cellardoor/bg/') {
     echo '
 		<script>
 		  $(function() {
-				var body = $(\'body\');
+				var body = $(\'.main\');
 				var backgrounds = new Array(';
 
 	$num = count($images);
